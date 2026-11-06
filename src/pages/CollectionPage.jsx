@@ -47,11 +47,11 @@ const CollectionPage = () => {
 
         {/* Collection Count */}
         <div className="flex flex-col sm:flex-row gap-3 items-center justify-between mb-6">
-          <h3 className="text-lg font-semibold">
+          <h3 className="text-lg font-semibold hidden sm:block">
             Saved Media
           </h3>
 
-          <div className='flex gap-3 items-center'>
+          <div className='flex gap-3 self-end'>
             <span className="px-3 py-2 rounded-lg bg-green-100 text-green-600 text-sm font-medium">
               {collection.length} Items
             </span>

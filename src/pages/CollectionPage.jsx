@@ -46,7 +46,7 @@ const CollectionPage = () => {
         </div>
 
         {/* Collection Count */}
-        <div className="flex items-center justify-between mb-6">
+        <div className="flex flex-col sm:flex-row gap-3 items-center justify-between mb-6">
           <h3 className="text-lg font-semibold">
             Saved Media
           </h3>
@@ -78,15 +78,16 @@ const CollectionPage = () => {
               <div key={item.id} className="relative group">
 
                 <ResultCard item={item} />
-
+                
                 <button
                   onClick={() => {
                     removeFromCollection(item.id)
                   }}
-                  className="absolute top-3 left-3 z-10 px-3 py-2 rounded-lg bg-white text-red-500 text-xs font-semibold shadow-sm opacity-0 group-hover:opacity-100 hover:bg-red-500 hover:text-white transition cursor-pointer"
+                  className="absolute top-3 left-3 z-10 px-3 py-2 rounded-lg bg-white text-red-500 text-xs font-semibold shadow-sm opacity-100 md:opacity-0 md:group-hover:opacity-100 hover:bg-red-500 hover:text-white transition cursor-pointer"
                 >
                   Remove
                 </button>
+
 
               </div>
             ))}

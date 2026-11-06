@@ -87,7 +87,7 @@ const ResultCard = ({ item }) => {
         {/* Save Button */}
         <button disabled={isSaved}
           onClick={() => addToCollection(item)}
-          className={`${location.pathname === '/collection' ? 'hidden' : ''} absolute top-3 left-3 px-4 py-2 rounded-lg text-xs font-semibold shadow-sm bg-white text-gray-700 transition-all duration-200 ${isSaved ? 'cursor-not-allowed opacity-80' : 'cursor-pointer hover:bg-green-600 hover:text-white opacity-0 group-hover:opacity-100 md:opacity-0 md:group-hover:opacity-100'}`}
+          className={`${location.pathname === '/collection' ? 'hidden' : ''} absolute top-3 left-3 px-4 py-2 rounded-lg text-xs font-semibold shadow-sm bg-white text-gray-700 transition-all duration-200 ${isSaved ? 'cursor-not-allowed opacity-80' : 'cursor-pointer hover:bg-green-600 hover:text-white opacity-100 md:opacity-0 md:group-hover:opacity-100'}`}
         >
           {isSaved ? 'Saved' : '+ Save'}
         </button>
